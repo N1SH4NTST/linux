@@ -82,7 +82,7 @@ int __init dca_sysfs_init(void)
 	return 0;
 }
 
-void __exit dca_sysfs_exit(void)
+void __exit dca_sysfs_exit()
 {
 	class_destroy(dca_class);
 	idr_destroy(&dca_idr);
